@@ -1,0 +1,29 @@
+<p>child-component works!</p>
+
+<h2>{{"Hello from parent : " + nameFromParent}}</h2>
+<button (click)="fireEvent()">Send event from child to parent</button>
+
+<h2>Name : {{name}}</h2>
+<h2>Name with lowercase : {{name | lowercase}}</h2>
+<h2>Name with uppercase : {{name | uppercase}}</h2>
+<h2>Message with TitleCase : {{message | titlecase}}</h2>
+<h2>Slicing message at position 3 : {{message | slice:3}}</h2>
+<h2>Slicing between 3 and 5 (excludig 5) : {{message | slice:3:5}}</h2>
+<h2>JSON representation of person object : {{person | json}}</h2>
+
+<h2>Checking number pipes : {{5.678 | number:'1.2-3'}}</h2>
+<h2>Checking number pipes : {{5.678 | number:'3.4-5'}}</h2>
+<h2>Checking number pipes : {{5.678 | number:'3.1-2'}}</h2>
+
+<h2>Percent pipe of 0.25 : {{0.25 | percent}}</h2>
+
+<h2>Currency pipe of 0.25 : {{0.25 | currency}}</h2>
+<h2>Currency pipe of 0.25 in INR : {{0.25 | currency:'INR'}}</h2>
+<h2>Currency pipe of 0.25 (Show currenct code instead of symbol) : {{0.25 | currency:'INR':'code'}}</h2>
+
+<h2>Date pipe (short) : {{date | date:'short'}}</h2>
+<h2>Date pipe (shortDate) : {{date | date:'shortDate'}}</h2>
+<h2>Date pipe (shortTime) : {{date | date:'shortTime'}}</h2>
+
+<!-- short can be replaced by medium and long -->
+
